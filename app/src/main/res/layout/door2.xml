@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="575dp"
+    android:background="#FFFFFF"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You've selected the door to Gendis"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="360dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-52dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_small_horizontal_margin"
+            android:paddingRight="@dimen/activity_small_horizontal_margin"
+            android:text="These doors open onto the room for Gendis HQ."
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/openDoorBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="82dp"
+            android:onClick="openCam"
+            android:text="Open Door"
+            android:title="@string/action_camera" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="119dp"
+
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</LinearLayout>
